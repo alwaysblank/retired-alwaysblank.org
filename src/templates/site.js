@@ -1,4 +1,5 @@
 import React from "react"
+import ContentBlock from "../components/blocks/block"
 
 class SiteTemplate extends React.Component {
   render() {
@@ -10,10 +11,10 @@ class SiteTemplate extends React.Component {
         <div>
           <p>{site.job_description}</p>
         </div>
-        {site.body.map(function(block) {
-          return <div className={block.type}>
-              {block.content}
-            </div>
+        {site.body.map(function(block, index) {
+          // if (block.type === `text`) {
+            return <ContentBlock key={index} block={block} />
+          // }
           }) }
       </div>
     )

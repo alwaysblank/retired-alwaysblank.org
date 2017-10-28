@@ -4,15 +4,16 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "commonmark": "^0.28.1",
     "gatsby": "^1.9.73",
     "gatsby-link": "^1.6.23",
     "gatsby-plugin-react-helmet": "^1.0.8",
-    "gatsby-plugin-sharp": "^1.6.10",
     "gatsby-plugin-styled-components": "^1.0.5",
     "gatsby-source-filesystem": "^1.5.5",
     "gatsby-transformer-json": "^1.0.11",
-    "gatsby-transformer-sharp": "^1.6.12",
-    "gatsby-transformer-yaml": "^1.5.11"
+    "gatsby-transformer-yaml": "^1.5.11",
+    "lodash": "^4.17.4",
+    "lodash.capitalize": "^4.2.1"
   },
   "keywords": [
     "gatsby"
@@ -27,8 +28,8 @@
   },
   "devDependencies": {
     "eslint": "^4.9.0",
-    "prettier": "^1.7.4",
     "eslint-plugin-compat": "^2.0.1",
-    "eslint-plugin-import": "^2.8.0"
+    "eslint-plugin-import": "^2.8.0",
+    "prettier": "^1.7.4"
   }
 }
