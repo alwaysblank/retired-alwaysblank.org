@@ -1,0 +1,59 @@
+path: /sites/edwritesgames
+name: Ed Kuehnel Portfolio
+short_name: Ed Keuhnel
+remote: http://edwritesgames.com
+job_description: "Design and development for the portfolio of a story 
+consultant, narrative designer, and screenwriter."
+technology:
+  - wordpress
+  - cmb2
+client:
+  - name: Foster Area Business Association
+    url: http://edwritesgames.com
+image: edwritesgames.com_front_page.png
+body:
+  - type: intro
+    content: "Ed Kuehnel, a story consultant, narrative designer, and 
+    screenwriter, needed a website to server as a portfolio and point 
+    of contact."
+  - type: list
+    content: "The design was created internally and approved by the client, 
+    and I developed the WordPress backend to meet his needs. Some of this 
+    project's notable challenges were:"
+    items: 
+      - "Custom post types to manage portfolio items, news micro-feed, 
+        and endorsements"
+      - "Metaboxes to make data entry easy for the client"
+      - "Simple, elegant design"
+  - type: text
+    content: "As a portfolio and point of contact for clients, the site 
+    needed to quickly present information with minimal fuss. Given that 
+    my client is an individual and not a company with numerous employees,
+     it was also important that the site be simple and intuitive to 
+     update. My client also specifically requested a small, one-line 
+     \"news micro-feed\":"
+  - type: image
+    content: edwritesgames.com_microfeed.png
+    alt: "News & announcements microfeed"
+  - type: text
+    content: "This feature would allow him to add simple, short updates 
+    or links to be displayed on every page of the site. It was 
+    implemented through a combination of metaboxes, via 
+    [CMB2](https://github.com/WebDevStudios/CMB2), and custom post types."
+  - type: image
+    content: edwritesgames.com_work.png
+    alt: "Work section on backend"
+  - type: text
+    content: "In addition to simplifying programming and management, 
+    the extensive use of custom post types in the project also provide 
+    a clear semantic framework when updating the site: Portfolio items 
+    are simply \"Work,\" not some less-intuitive and semantically 
+    inaccurate construction such as \"posts in the 'work' category.\""
+  - type: image
+    content: edwritesgames.com_project.png
+    caption: "The project creation view."
+    alt: "Project creation, backend"
+  - type: image
+    content: edwritesgames.com_project_front_end.png
+    caption: "How projects appear on the front end."
+    alt: "Project appearance, frontend"

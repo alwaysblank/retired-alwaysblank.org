@@ -1,0 +1,51 @@
+path: /sites/foster
+name: Foster Area Business Association Portal
+short_name: Foster
+remote: https://fosterarea.com
+job_description: Design & develop site to promote and connect local businesses
+technology:
+  - wordpress
+  - googlemaps
+  - javascript
+client:
+  - name: Foster Area Business Association
+    url: https://fosterarea.com
+  - name: Marina Martinez Consulting
+    url: http://marinaforhire.com
+image: fosterarea.com_front_page.png
+body:
+  - type: intro
+    content: "Foster-Powell is an up-and-coming neighborhood in Portland, Oregon's
+    East Side, but the website for their business association was essentially
+    non-existant."
+  - type: text
+    content: "The Foster Area Business Association is a group of allied businesses 
+    in Portland, Oregon’s up-and-coming Foster-Powell neightborhood. Their old web 
+    site was essentially non-existent, so they pursed a grant from the city to 
+    commission a new one. Marina Martinez Consulting won the contact and hired me 
+    to do the design and development.
+
+    The budget was limited, so the site was designed to be simple yet usable, both 
+    in design and functionality. Since it was likely to be further enhanced as more 
+    money became available to the business association, I attempted to structure 
+    its content to be as ameniable to change and improvement as possible."
+  - type: text
+    content: "To this end, the core of the site was built around a “member” post type, 
+    each representing a differnent  member. Each member post object included metadata
+    about their business, and could be categories by the type of business (i.e. 
+    “Food/Drink”, “Professional Services”, etc) and their status (i.e “Active”, 
+    “Board Member”, etc). This allowed for easy categorization, both for the people 
+    managing the site, and for users visiting it. A group of randomly-selected members 
+    are also dispalyed on the front page with each page load, to help bring awareness 
+    to everyone involved in the organization."
+  - type: image
+    content: fosterarea.com_member_meta_backend.png
+    caption: The "Location" section of the member metadata.
+    alt: "Member administration backend"
+  - type: image
+    content: fosterarea.com_member_meta_frontend.png
+    caption: How the "Location" metadata appears on the frontend.
+    alt: "Member data in frontend"
+  - type: text
+    content: "A simple ad implementation was also designed, allowing placement of 
+    ad banners at the top of the front page and on the sidebar."

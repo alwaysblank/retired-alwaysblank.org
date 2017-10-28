@@ -1,0 +1,24 @@
+path: /sites/stackery
+name: Stackery
+remote: https://stackery.io
+job_description: Develop the primary face of an up-and-coming technology company.
+technology:
+  - jekyll
+  - javascript
+client:
+  - name: Murmur Creative
+    url: https://murmurcreative.com
+  - name: Stackery
+    url: http://stackery.io
+image: stackery.io_front_page.png
+body:
+  - type: intro
+    content: "Mollit occaecat velit commodo mollit esse dolore id cillum nisi 
+    exercitation ipsum magna."
+  - type: text
+    content: "Veniam ea exercitation dolore anim quis ut anim aute cillum 
+    pariatur minim excepteur ullamco culpa. Consectetur esse aute dolor ipsum 
+    in voluptate commodo magna commodo et nostrud proident esse. Anim id 
+    culpa et excepteur cillum duis minim. Et adipisicing id anim ea. Excepteur 
+    proident Lorem laborum officia dolor nisi ullamco consectetur culpa eu 
+    cupidatat qui labore proident."
