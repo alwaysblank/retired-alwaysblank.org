@@ -1,7 +1,7 @@
 import React from "react"
 import {Parser, HtmlRenderer} from "commonmark"
 
-class TextContentBlock extends React.Component {
+class IntroContentBlock extends React.Component {
   render() {
     const block = this.props.content
     const reader = new Parser()
@@ -11,10 +11,10 @@ class TextContentBlock extends React.Component {
     return (
       <div 
         dangerouslySetInnerHTML={content} 
-        className='contentBlock--text'>
+        className='contentBlock--intro'>
       </div>
     )
   }
 }
 
-export default TextContentBlock
+export default IntroContentBlock

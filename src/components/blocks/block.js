@@ -1,14 +1,26 @@
 import React from "react"
-import capitalize from "lodash.capitalize"
 
 import TextContentBlock from "./text"
+import IntroContentBlock from "./intro"
+import ImageContentBlock from "./image"
+import ListContentBlock from "./list"
+
+const block = {
+  text: TextContentBlock,
+  intro: IntroContentBlock,
+  image: ImageContentBlock,
+  list: ListContentBlock,
+}
 
 class ContentBlock extends React.Component {
+
   render() {
     const content = this.props.block
-    const Component = `${capitalize(this.props.block.type)}ContentBlock`
+    const key = this.props.id
+    const Block = block[this.props.block.type]
+    
     return (
-      <TextContentBlock content={content} />
+      <Block id={key} content={content} />
     )
   }
 }
