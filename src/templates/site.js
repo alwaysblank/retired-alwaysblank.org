@@ -43,8 +43,8 @@ export const pageQuery = graphql`
         alt
         image {
           childImageSharp {
-            resolutions(width: 600, height: 420) {
-              ...GatsbyImageSharpResolutions
+            resolutions(width: 800) {
+              ...GatsbyImageSharpResolutions_withWebp_noBase64
             }
           }
         }
