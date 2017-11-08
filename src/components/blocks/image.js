@@ -6,7 +6,6 @@ import Caption from './caption'
 class ImageContentBlock extends React.Component {
   render() {
     const data = this.props.content
-    console.log(data)
 
     return (
       <div className="contentBlock--imageWrapper">
