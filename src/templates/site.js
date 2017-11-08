@@ -1,8 +1,10 @@
 import React from "react"
 import ContentBlock from "../components/blocks/block"
+import Img from 'gatsby-image'
 
 class SiteTemplate extends React.Component {
   render() {
+
     const site = this.props.data.sitesYaml
 
     return (
@@ -23,6 +25,7 @@ export const pageQuery = graphql`
     sitesYaml(path: { eq: $path }) {
       path
       name
+      prefix
       short_name
       job_description
       technology
@@ -30,7 +33,6 @@ export const pageQuery = graphql`
         name
         url
       }
-      image
       body {
         type
         content
@@ -39,6 +41,13 @@ export const pageQuery = graphql`
         # image-type specific
         caption
         alt
+        image {
+          childImageSharp {
+            resolutions(width: 600, height: 420) {
+              ...GatsbyImageSharpResolutions
+            }
+          }
+        }
       }
     }
   }

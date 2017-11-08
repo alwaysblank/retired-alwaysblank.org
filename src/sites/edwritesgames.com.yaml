@@ -1,4 +1,5 @@
 path: /sites/edwritesgames
+prefix: edwritesgames.com
 name: Ed Kuehnel Portfolio
 short_name: Ed Keuhnel
 remote: http://edwritesgames.com
@@ -10,7 +11,7 @@ technology:
 client:
   - name: Foster Area Business Association
     url: http://edwritesgames.com
-image: edwritesgames.com_front_page.png
+head_image: edwritesgames.com/edwritesgames.com_front_page.png
 body:
   - type: intro
     content: "Ed Kuehnel, a story consultant, narrative designer, and 
@@ -33,7 +34,7 @@ body:
      update. My client also specifically requested a small, one-line 
      \"news micro-feed\":"
   - type: image
-    content: edwritesgames.com_microfeed.png
+    image: edwritesgames.com/edwritesgames.com_microfeed.png
     alt: "News & announcements microfeed"
   - type: text
     content: "This feature would allow him to add simple, short updates 
@@ -41,7 +42,7 @@ body:
     implemented through a combination of metaboxes, via 
     [CMB2](https://github.com/WebDevStudios/CMB2), and custom post types."
   - type: image
-    content: edwritesgames.com_work.png
+    image: edwritesgames.com/edwritesgames.com_project.png
     alt: "Work section on backend"
   - type: text
     content: "In addition to simplifying programming and management, 
@@ -50,10 +51,10 @@ body:
     are simply \"Work,\" not some less-intuitive and semantically 
     inaccurate construction such as \"posts in the 'work' category.\""
   - type: image
-    content: edwritesgames.com_project.png
+    image: edwritesgames.com/edwritesgames.com_work.png
     caption: "The project creation view."
     alt: "Project creation, backend"
   - type: image
-    content: edwritesgames.com_project_front_end.png
+    image: edwritesgames.com/edwritesgames.com_project_front_end.png
     caption: "How projects appear on the front end."
     alt: "Project appearance, frontend"

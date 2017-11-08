@@ -1,5 +1,6 @@
 path: /sites/stackery
 name: Stackery
+prefix: stackery.io
 remote: https://stackery.io
 job_description: Develop the primary face of an up-and-coming technology company.
 technology:
@@ -10,7 +11,7 @@ client:
     url: https://murmurcreative.com
   - name: Stackery
     url: http://stackery.io
-image: stackery.io_front_page.png
+# image: stackery.io_front_page.png
 body:
   - type: intro
     content: "Mollit occaecat velit commodo mollit esse dolore id cillum nisi 

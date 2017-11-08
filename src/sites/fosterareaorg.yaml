@@ -1,4 +1,5 @@
 path: /sites/foster
+prefix: fosterarea.com
 name: Foster Area Business Association Portal
 short_name: Foster
 remote: https://fosterarea.com
@@ -12,7 +13,7 @@ client:
     url: https://fosterarea.com
   - name: Marina Martinez Consulting
     url: http://marinaforhire.com
-image: fosterarea.com_front_page.png
+head_image: fosterarea.com/fosterarea.com_front_page.png
 body:
   - type: intro
     content: "Foster-Powell is an up-and-coming neighborhood in Portland, Oregon's
@@ -39,11 +40,11 @@ body:
     are also dispalyed on the front page with each page load, to help bring awareness 
     to everyone involved in the organization."
   - type: image
-    content: fosterarea.com_member_meta_backend.png
+    image: fosterarea.com/fosterarea.com_member_meta_backend.png
     caption: The "Location" section of the member metadata.
     alt: "Member administration backend"
   - type: image
-    content: fosterarea.com_member_meta_frontend.png
+    image: fosterarea.com/fosterarea.com_member_meta_frontend.png
     caption: How the "Location" metadata appears on the frontend.
     alt: "Member data in frontend"
   - type: text

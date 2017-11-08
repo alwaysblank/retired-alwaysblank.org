@@ -5,11 +5,14 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "commonmark": "^0.28.1",
-    "gatsby": "^1.9.73",
+    "gatsby": "^1.9",
+    "gatsby-image": "^1.0.16",
     "gatsby-link": "^1.6.23",
     "gatsby-plugin-react-helmet": "^1.0.8",
+    "gatsby-plugin-sharp": "^1.6.13",
     "gatsby-plugin-styled-components": "^1.0.5",
     "gatsby-source-filesystem": "^1.5.5",
+    "gatsby-transformer-sharp": "^1.6.13",
     "gatsby-transformer-yaml": "^1.5.11",
     "lodash.capitalize": "^4.2.1"
   },

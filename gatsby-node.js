@@ -24,7 +24,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       createPage({
         path: node.path,
         component: SiteTemplate,
-        context: {}
+        context: {},
       });
     });
   });
