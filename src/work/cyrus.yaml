@@ -1,0 +1,67 @@
+type: tool
+name: Cyrus
+slug: cyrus
+remote: https://packagist.org/packages/livy/cyrus
+description: Builds HTML with PHP in a pleasant, straightforward way.
+technology:
+  - php
+body:
+  - type: text
+    content: "Cyrus is a tool for creating HTML with PHP. It's not really a templating language, more a sort of wierd recreation of the DOM. I created it because I wanted a way to generate HTML using PHP object method chaining. It's a visually logical way of showing what gets generated, and it allows for programatically affecting what HTML is generated without wrapping raw tags in PHP."
+
+  - type: code
+    language: php
+    content: |-
+      $element = new Livy\Cyrus;
+      $element
+        ->class('this-is-the-class')
+        ->content('Here is some content!')
+        ->display();
+
+  - type: code
+    language: html
+    content: |-
+      <div class="this-is-the-class">Here is some content!</div>
+
+  - type: code
+    language: php
+    explain: "You can also generate more heavily nested elements:"
+    content: |-
+      $nest = new Livy\Cyrus;
+      $nest->class('wrapper')
+          ->o()->el('h1')->content('Welcome')->c()
+          ->o()->el('p')->content("You've arrived at my web site!")->c()
+      ->c()->display();
+
+  - type: code
+    language: html
+    content: |-
+      <div class="wrapper">
+          <h1 class="h1">Welcome</h1>
+          <p>You've arrived at my web site!</p>
+      </div>
+
+  - type: code
+    language: php
+    explain: "`nest()` allows allows you to nest elements even after you've closed an element:"
+    content: |-
+      $list = new Livy\Cryus;
+      $list->class('wrapper')
+          ->o('inner')->el('ul')->ca();
+
+      foreach (['one', 'two', 'three'] as $item) :
+          $list->n('inner')->o()->el('li')->content($item)->ca();
+      endforeach;
+
+      $list->display();
+
+  - type: code
+    language: html
+    content: |-
+      <div class="wrapper">
+        <ul>
+          <li>one</li>
+          <li>two</li>
+          <li>three</li>
+        </ul>
+      </div>
