@@ -1,0 +1,39 @@
+type: tool
+name: Climber
+slug: climber
+remote: https://github.com/alwaysblank/climber
+description: A better way to display navigation menus in WordPress.
+technology:
+  - php
+client:
+  - name: Murmur Creative
+    url: https://murmurcreative.com
+# image: stackery.io_front_page.png
+body:
+  - type: intro
+    content: "Mollit occaecat velit commodo mollit esse dolore id cillum nisi 
+    exercitation ipsum magna."
+  - type: text
+    content: "Veniam ea exercitation dolore anim quis ut anim aute cillum 
+    pariatur minim excepteur ullamco culpa. Consectetur esse aute dolor ipsum 
+    in voluptate commodo magna commodo et nostrud proident esse. Anim id 
+    culpa et excepteur cillum duis minim. Et adipisicing id anim ea. Excepteur 
+    proident Lorem laborum officia dolor nisi ullamco consectetur culpa eu 
+    cupidatat qui labore proident."
+  - type: code
+    language: php
+    content: |-
+      use Livy\Climber;
+
+      echo new Climber(
+        new Tree(
+          new Spotter\WordPress(wp_get_nav_menu_items($menuID))
+        )
+      );
+
+  - type: code
+    language: html
+    content: |-
+      <nav class="simpleMenu" >
+        <ul class="simpleMenu__menu level-0">
+          <!-- ...etc -->

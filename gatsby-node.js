@@ -3,14 +3,15 @@ const path = require(`path`);
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
 
-  const SiteTemplate = path.resolve(`src/templates/site.js`);
+  const WorkTemplate = path.resolve(`src/templates/work.js`);
 
   return graphql(`
     {
-      allSitesYaml {
+      allWorkYaml {
         edges {
           node {
-            path
+            type
+            slug
           }
         }
       }
@@ -20,11 +21,14 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       return Promise.reject(result.errors);
     }
 
-    result.data.allSitesYaml.edges.forEach(({ node }) => {
+    result.data.allWorkYaml.edges.forEach(({ node }) => {
       createPage({
-        path: node.path,
-        component: SiteTemplate,
-        context: {},
+        path: path.join(`work`, node.type, node.slug),
+        component: WorkTemplate,
+        context: {
+          slug: node.slug,
+          type: node.type,
+        },
       });
     });
   });

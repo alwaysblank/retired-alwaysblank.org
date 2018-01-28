@@ -2,15 +2,15 @@ import React from "react"
 import ContentBlock from "../components/blocks/block"
 import Img from 'gatsby-image'
 
-class SiteTemplate extends React.Component {
+class WorkTemplate extends React.Component {
   render() {
 
-    const site = this.props.data.sitesYaml
+    const work = this.props.data.workYaml
 
     return (
       <div>
-        <h1>{site.name}</h1>
-        {site.body.map(function(block, index) {
+        <h1>{work.name}</h1>
+        {work.body.map(function(block, index) {
             return <ContentBlock key={index} block={block} />
           }) }
       </div>
@@ -18,16 +18,16 @@ class SiteTemplate extends React.Component {
   }
 }
 
-export default SiteTemplate
+export default WorkTemplate
 
 export const pageQuery = graphql`
-  query SiteByPath($path: String!) {
-    sitesYaml(path: { eq: $path }) {
-      path
+  query WorkBySlug($slug: String!, $type: String!) {
+    workYaml(slug: { eq: $slug }, type: { eq: $type }) {
       name
-      prefix
+      type
+      slug
       short_name
-      job_description
+      description
       technology
       client {
         name
@@ -36,6 +36,8 @@ export const pageQuery = graphql`
       body {
         type
         content
+        # code-type specific
+        language
         # list-type specific
         items
         # image-type specific

@@ -1,6 +1,9 @@
 {
     "root": true,
-    "extends": "eslint:recommended",
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
     "globals": {
       "wp": true
     },
@@ -25,6 +28,7 @@
     "plugins": [
       "import",
       "compat",
+      "react"
     ],
     "settings": {
       "import/core-modules": [],
