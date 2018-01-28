@@ -38,6 +38,7 @@ export const pageQuery = graphql`
         content
         # code-type specific
         language
+        explain
         # list-type specific
         items
         # image-type specific

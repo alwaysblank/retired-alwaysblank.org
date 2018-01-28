@@ -22,6 +22,7 @@ body:
     cupidatat qui labore proident."
   - type: code
     language: php
+    explain: "The simplest implementation of Climber looks like this:"
     content: |-
       use Livy\Climber;
 

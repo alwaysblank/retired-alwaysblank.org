@@ -10,7 +10,7 @@ require(`prismjs/components/prism-jsx.js`);
 require(`prismjs/components/prism-markdown.js`);
 require(`prismjs/components/prism-yaml.js`);
 require(`prismjs/components/prism-bash.js`);
-require(`prismjs/themes/prism-coy.css`);
+require(`prismjs/themes/prism-okaidia.css`);
 import PrismCode from 'react-prism'
 
 class CodeContentBlock extends React.Component {
@@ -18,11 +18,18 @@ class CodeContentBlock extends React.Component {
     const block = this.props.content
 
     return (
-      <pre className={`contentBlock--code language-${block.language}`}>
-        <PrismCode>
-            {block.content}
-        </PrismCode>
-      </pre>
+      <div className={`contentBlock--code language-${block.language}`}>
+        {block.explain &&
+          <p className="contentBlock--code__explain">
+            {block.explain}
+          </p>
+        }
+        <pre>
+          <PrismCode>
+              {block.content}
+          </PrismCode>
+        </pre>
+      </div>
     )
   }
 }
