@@ -1,8 +1,26 @@
 const path = require(`path`);
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
+  
+  // Set up redirects
+  const { createRedirect } = boundActionCreators
+  let redirects = [
+    { f: `/work/tool`, t: `/work/tools` },
+    { f: `/work/tool/`, t: `/work/tools/` },
+    { f: `/work/site`, t: `/work/sites` },
+    { f: `/work/site/`, t: `/work/sites/` },
+  ]
+  
+  redirects.forEach(({ f, t }) => {
+    createRedirect({
+      fromPath: f,
+      redirectInBrowser: true,
+      toPath: t,
+    })
+  })
+  
+  // Set up Work
   const { createPage } = boundActionCreators;
-
   const WorkTemplate = path.resolve(`src/templates/work.js`);
 
   return graphql(`
@@ -23,7 +41,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
     result.data.allWorkYaml.edges.forEach(({ node }) => {
       createPage({
-        path: path.join(`work`, node.type, node.slug),
+        path: path.posix.join(`work`, node.type, node.slug),
         component: WorkTemplate,
         context: {
           slug: node.slug,
@@ -32,4 +50,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       });
     });
   });
+
+
 };
