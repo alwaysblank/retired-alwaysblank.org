@@ -1,0 +1,45 @@
+type: tool
+name: Blade Generator
+slug: blade-generator
+remote: https://github.com/alwaysblank/blade-generate
+description: Generates rendered Blade templates, so you don't have to wait.
+technology:
+  - wp-cli
+  - blade
+  - roots
+body:
+  - type: text
+    content: "I've been using the [Roots](https://roots.io/) WordPress stack at
+      work and for freelance for a few years now. The upcoming version of Sage,
+      version 9, will include Blade templating (borrowed from Laravel). I
+      noticed someone on the Roots forums [mention](https://discourse.roots.io/t/best-practice-resources-for-blade/8341/72)
+      that it would be nice to have the capability to pre-render Blade
+      templates on deploy instead of waiting for them to render on request,
+      so I took decided now was a good time to learn how to write a WP-CLI
+      plugin.
+
+      The plugin is intended to adhere to the UNIX philosophy of making a
+      program do one thing and do it well. All it does is render templates,
+      but it does it quietly and elegantly."
+
+  - type: code
+    explain: "To use it, just run the following on the command line:"
+    language: bash
+    content: |-
+      wp blade compile
+
+  - type: text
+    content: "This scans your active theme for any blade template files, and
+      then renders them through Sage's Blade interface. It finds template files
+      wherever they are, and uses the cache location described in your theme's
+      Sage configuration, so it needs no configuration of its own. It doesn't
+      prompt the user, so it can easily be run on deploy without user input."
+
+  - type: code
+    explain: "If you find you only want to render a subset of your templates,
+      it will limit its seach to a directory you pass to it:"
+    content: |-
+      wp blade compile --directory=path/to/files
+
+  - type: text
+    content: "Also, if your console supports it, the script uses emoji \U0001F52A."

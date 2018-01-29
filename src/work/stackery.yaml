@@ -1,8 +1,8 @@
-path: /sites/stackery
+type: site
 name: Stackery
-prefix: stackery.io
+slug: stackery.io
 remote: https://stackery.io
-job_description: Develop the primary face of an up-and-coming technology company.
+description: Develop the primary face of an up-and-coming technology company.
 technology:
   - jekyll
   - javascript

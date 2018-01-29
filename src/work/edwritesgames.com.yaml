@@ -1,9 +1,9 @@
-path: /sites/edwritesgames
-prefix: edwritesgames.com
+type: site
+slug: edwritesgames.com
 name: Ed Kuehnel Portfolio
 short_name: Ed Keuhnel
 remote: http://edwritesgames.com
-job_description: "Design and development for the portfolio of a story 
+description: "Design and development for the portfolio of a story 
 consultant, narrative designer, and screenwriter."
 technology:
   - wordpress

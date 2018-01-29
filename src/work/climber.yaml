@@ -1,0 +1,37 @@
+type: tool
+name: Climber
+slug: climber
+remote: https://github.com/alwaysblank/climber
+description: A better way to display navigation menus in WordPress.
+technology:
+  - php
+body:
+  - type: intro
+    content: "Why [walk](https://codex.wordpress.org/Class_Reference/Walker)
+      when you can climb?"
+      
+  - type: text
+    content: "An alternative to WordPress's built-in `Nav_Walker`, \U0001F9D7
+      Climber creates a more reasonable data structure, which can be interacted
+      with directly or used to generate the HTML for a navigation menu. I built
+      it because every time I had to customize a menu using `Nav_Walker` it was
+      a very frustrating experience."
+  
+  - type: code
+    language: php
+    explain: "The simplest implementation of Climber looks like this:"
+    content: |-
+      use Livy\Climber;
+
+      echo new Climber(
+        new Tree(
+          new Spotter\WordPress(wp_get_nav_menu_items($menuID))
+        )
+      );
+
+  - type: code
+    language: html
+    content: |-
+      <nav class="simpleMenu" >
+        <ul class="simpleMenu__menu level-0">
+          <!-- ...etc -->

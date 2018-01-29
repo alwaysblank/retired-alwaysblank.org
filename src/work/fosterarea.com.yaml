@@ -1,9 +1,9 @@
-path: /sites/foster
-prefix: fosterarea.com
+type: site
+slug: fosterarea.com
 name: Foster Area Business Association Portal
 short_name: Foster
 remote: https://fosterarea.com
-job_description: Design & develop site to promote and connect local businesses
+description: Design & develop site to promote and connect local businesses
 technology:
   - wordpress
   - googlemaps

@@ -1,12 +1,14 @@
 import React from "react"
 
 import TextContentBlock from "./text"
+import CodeContentBlock from "./code"
 import IntroContentBlock from "./intro"
 import ImageContentBlock from "./image"
 import ListContentBlock from "./list"
 
 const block = {
   text: TextContentBlock,
+  code: CodeContentBlock,
   intro: IntroContentBlock,
   image: ImageContentBlock,
   list: ListContentBlock,
