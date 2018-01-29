@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "alwayblank",
+  "description": "Always Blank site.",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ben Martinez-Bateman <ben@alwaysblank.org>",
   "dependencies": {
     "commonmark": "^0.28.1",
     "eslint-plugin-react": "^7.5.1",
